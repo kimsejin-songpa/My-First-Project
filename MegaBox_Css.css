@@ -40,23 +40,51 @@ body {
     font-size : .8667em;
 }
 
-.top div {
-    display: inline-block;
+.top span {
+    margin-left: 20px;
 }
 
 /*side-menu*/
+
+.left-side-menu, .right-side-menu {
+    display: flex;
+    align-items: center;
+}
+
+.left-side-menu a, .right-side-menu a {
+    margin : 5px;
+}
+
 .side-menu {
     display : inline-block;
     display : flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    /* margin : 0 auto; */
 }
 
-.side-menu a {
-    height : 36px;
-    width: 36px;
+.leftList, .rightList {
+    display: flex;
+}
+
+.leftList {
+    margin-left : 50px;
+    margin-right : 50px;
+}
+
+.rightList {
+    margin-left : 50px;
+    margin-right : 50px;
 }
 
 /*nav*/
+
+/* .side-icon {
+    display: inline-block;
+    width : 36px;
+    height : 36px;
+} */
 
 ul {
     list-style-type: none;
@@ -67,19 +95,14 @@ ul {
 }
 
 .nav-left, .nav-right {
-    display : flex;
-    
-}
-
-.nav-left>li, .nav-right>li {
-    display: inline-block;
+    display : flex; 
 }
 
 ul a {
     color : white;
 }
 
-ul span {
+.textMenu {
     width: 30px;
     height : 38px;
     margin : 20px;
